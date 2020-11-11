@@ -21,6 +21,10 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		99471A49680FF7B9B78EB75A /* libPods-newsapp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3D9DE18037FBD03EE743FA /* libPods-newsapp-tvOS.a */; };
 		CD78254C2AB2D06BCE34E57E /* libPods-newsapp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 428C2D3AA58CEB10CC447E7A /* libPods-newsapp-tvOSTests.a */; };
+		97E4AF9052A948A0B778FB0D /* PlayfairDisplay-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBB069DEE42349F8BF7D9440 /* PlayfairDisplay-SemiBold.otf */; };
+		E944A1F079364B43B6F5121C /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 273D348A61074FF4B8E7149C /* SFProDisplay-Bold.otf */; };
+		371645BFAD064CACB2F96E0D /* SFProDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AB4B7832EE954994922D8436 /* SFProDisplay-Medium.otf */; };
+		399389AA7CC24119BA47FFD7 /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B050D95505E42B8B932167C /* SFProDisplay-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F4373BA981ED36E42A1E6D71 /* Pods-newsapp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-newsapp-tvOSTests/Pods-newsapp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6463D8C599D484C9E909639 /* PlayfairDisplay-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-SemiBold.otf"; path = "../assets/fonts/PlayfairDisplay-SemiBold.otf"; sourceTree = "<group>"; };
+		DBB069DEE42349F8BF7D9440 /* PlayfairDisplay-SemiBold.otf */ = {isa = PBXFileReference; name = "PlayfairDisplay-SemiBold.otf"; path = "../src/assets/fonts/PlayfairDisplay-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		273D348A61074FF4B8E7149C /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Bold.otf"; path = "../src/assets/fonts/SFProDisplay-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AB4B7832EE954994922D8436 /* SFProDisplay-Medium.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Medium.otf"; path = "../src/assets/fonts/SFProDisplay-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6B050D95505E42B8B932167C /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Regular.otf"; path = "../src/assets/fonts/SFProDisplay-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,10 @@
 			isa = PBXGroup;
 			children = (
 				F6463D8C599D484C9E909639 /* PlayfairDisplay-SemiBold.otf */,
+				DBB069DEE42349F8BF7D9440 /* PlayfairDisplay-SemiBold.otf */,
+				273D348A61074FF4B8E7149C /* SFProDisplay-Bold.otf */,
+				AB4B7832EE954994922D8436 /* SFProDisplay-Medium.otf */,
+				6B050D95505E42B8B932167C /* SFProDisplay-Regular.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -354,6 +366,10 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				05D804717AA2433EA56472CD /* PlayfairDisplay-SemiBold.otf in Resources */,
+				97E4AF9052A948A0B778FB0D /* PlayfairDisplay-SemiBold.otf in Resources */,
+				E944A1F079364B43B6F5121C /* SFProDisplay-Bold.otf in Resources */,
+				371645BFAD064CACB2F96E0D /* SFProDisplay-Medium.otf in Resources */,
+				399389AA7CC24119BA47FFD7 /* SFProDisplay-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

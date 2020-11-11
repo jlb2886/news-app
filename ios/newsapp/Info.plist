@@ -56,6 +56,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>PlayfairDisplay-SemiBold.otf</string>
+		<string>SFProDisplay-Bold.otf</string>
+		<string>SFProDisplay-Medium.otf</string>
+		<string>SFProDisplay-Regular.otf</string>
 	</array>
 </dict>
 </plist>
