@@ -57,3 +57,7 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+/ios/Podfile.lock
+/ios/newsapp.xcworkspace/contents.xcworkspacedata
+/ios/newsapp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/ios/newsapp.xcworkspace/
