@@ -16,7 +16,7 @@ import {
   StatusBar,
 } from 'react-native';
 
-import {Colors} from './styles'
+import {Colors, Typography} from './styles'
 
 const App: () => React$Node = () => {
   return (
@@ -60,10 +60,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
   },
   sectionTitle: {
-    fontSize: 36,
-    fontWeight: '600',
+    ...Typography.FONT_SEMI_BOLD,
+    fontSize: Typography.FONT_SIZE_32,
     color: Colors.WHITE,
-    fontFamily: 'PlayfairDisplay-SemiBold',
   },
   replacerBox: {
     marginTop: 20,
@@ -75,8 +74,8 @@ const styles = StyleSheet.create({
   },
   sectionDescription: {
     marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
+    ...Typography.FONT_REGULAR,
+    fontSize: Typography.FONT_SIZE_16,
     color: Colors.GRAY_LIGHT,
   },
   highlight: {
