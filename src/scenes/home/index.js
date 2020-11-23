@@ -14,12 +14,12 @@ const HomeScreen = ({navigation}) => {
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Today's Read"}</Text>
         </View>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
+        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image} body={mockdata[0].body}/>
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Previous Reads"}</Text>
         </View>
-        <SectionContainer title={mockdata[1].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
-        <SectionContainer title={mockdata[2].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
+        <SectionContainer title={mockdata[1].title} description={mockdata[1].description} date={mockdata[1].date} author={mockdata[1].author} image={mockdata[1].image} body={mockdata[1].body}/>
+        <SectionContainer title={mockdata[2].title} description={mockdata[2].description} date={mockdata[2].date} author={mockdata[2].author} image={mockdata[2].image} body={mockdata[2].body}/>
       </ScrollView>
     </View>
   )

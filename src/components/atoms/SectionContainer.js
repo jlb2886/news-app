@@ -3,12 +3,12 @@ import {Image, Pressable, StyleSheet, Text, View} from "react-native";
 import {Colors, Typography} from "../../styles";
 import {useNavigation} from "@react-navigation/native";
 
-function SectionContainer ({title, description, image, date, author}){
+function SectionContainer ({title, description, image, date, author, body}){
   const navigation = useNavigation()
 
   const handlePress = () => {
     console.log('SOMEONE TOUCHED ME :O')
-    navigation.navigate('Article', {title, description})
+    navigation.navigate('Article', {title, description, image, body, date, author})
   }
 
   return (
@@ -33,8 +33,6 @@ const styles = StyleSheet.create({
   root: {
     backgroundColor: Colors.BLACK,
     flex: 1,
-  },
-  scrollView: {
   },
   engine: {
     position: 'absolute',
@@ -83,7 +81,6 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 190,
     backgroundColor: Colors.PRIMARY,
-    // textAlign: 'center',
   },
   sectionDescription: {
     marginTop: 8,
