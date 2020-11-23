@@ -23,6 +23,7 @@ function SectionContainer ({title, description, image, date, author, body}){
         }}
       />
       <Text style={styles.sectionDescription}>{description}</Text>
+      <Text style={styles.readMore}>Read More</Text>
     </Pressable>
   )
 }
@@ -39,7 +40,7 @@ const styles = StyleSheet.create({
     right: 0,
   },
   sectionContainer: {
-    marginTop: 32,
+    marginTop: 20,
     paddingHorizontal: 24,
     paddingVertical: 20,
     backgroundColor: Colors.SECONDARY,
@@ -72,6 +73,12 @@ const styles = StyleSheet.create({
   authorDateStyle: {
     marginTop: 8,
     ...Typography.FONT_REGULAR,
+    fontSize: Typography.FONT_SIZE_16,
+    color: Colors.GRAY_LIGHT,
+  },
+  readMore: {
+    marginTop: 8,
+    ...Typography.FONT_BOLD,
     fontSize: Typography.FONT_SIZE_16,
     color: Colors.GRAY_LIGHT,
   },

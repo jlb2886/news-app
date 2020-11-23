@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     ...Typography.FONT_REGULAR,
     fontSize: Typography.FONT_SIZE_16,
+    lineHeight: 30,
     color: Colors.GRAY_LIGHT,
     marginHorizontal: 20,
   }
