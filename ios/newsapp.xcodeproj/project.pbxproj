@@ -8,37 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* newsappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* newsappTests.m */; };
+		0706F350CA974A01AD9FFB86 /* SFProDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B0FB664188424D865710C4 /* SFProDisplay-Light.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		18732FECD1D04462B569D3E0 /* SFProDisplay-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6E966F9927304CB9B0441759 /* SFProDisplay-RegularItalic.otf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* newsappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* newsappTests.m */; };
+		314C38FEF71844579344B38C /* SFProDisplay-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1037F961359246DDA484D66B /* SFProDisplay-LightItalic.otf */; };
 		371645BFAD064CACB2F96E0D /* SFProDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AB4B7832EE954994922D8436 /* SFProDisplay-Medium.otf */; };
 		399389AA7CC24119BA47FFD7 /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B050D95505E42B8B932167C /* SFProDisplay-Regular.otf */; };
+		3E07899B684640EDA9E9C9F1 /* SFProDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 15EAF3685B1946478B885A37 /* SFProDisplay-Thin.otf */; };
 		50DBD885CCCFAABAA53B7E19 /* libPods-newsapp-newsappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50710430684AADA734DC82B9 /* libPods-newsapp-newsappTests.a */; };
+		5BC170C2501B400A973687C8 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41BE8E080BF9426497B070B5 /* SFProDisplay-Semibold.otf */; };
+		5BCD826DB8FF4E039F33C4F9 /* SFProDisplay-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F682B223E0C54EEF83BAF368 /* SFProDisplay-ThinItalic.otf */; };
 		625BB927B9C7EFD447DDBF8E /* libPods-newsapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C53E1361326CB4BFED4E5 /* libPods-newsapp.a */; };
+		672DEF5226AA4FE89C3DB9EB /* SFProDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 836DC0A754AF442AAD256A74 /* SFProDisplay-Ultralight.otf */; };
+		7C839F6C7CA441B7BCB5E45D /* SFProDisplay-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F98741808B6B45D9B5D8F1FB /* SFProDisplay-BlackItalic.otf */; };
+		7E5A10AA5F7F4A0B80A80E6A /* SFProDisplay-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 371E60C3B8F04294ADA7F475 /* SFProDisplay-UltralightItalic.otf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		871823A6EC28464ABEB59CD4 /* SFProDisplay-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8A38D353CA844449AF3D2EC2 /* SFProDisplay-BoldItalic.otf */; };
+		88C77581BE8B4C10A3641604 /* SFProDisplay-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1CEB16F041A4C8B8CFAD9C0 /* SFProDisplay-SemiboldItalic.otf */; };
+		8BCE25F7E4064C0994453511 /* SFProDisplay-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A929EC80A0A64B2FAD9887FD /* SFProDisplay-MediumItalic.otf */; };
 		97E4AF9052A948A0B778FB0D /* PlayfairDisplay-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DBB069DEE42349F8BF7D9440 /* PlayfairDisplay-SemiBold.otf */; };
 		99471A49680FF7B9B78EB75A /* libPods-newsapp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3D9DE18037FBD03EE743FA /* libPods-newsapp-tvOS.a */; };
+		A7EF53855A5646E1A2C11C2E /* SFProDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24FFC1CD9B0940A58B30CFEA /* SFProDisplay-Heavy.otf */; };
 		CD78254C2AB2D06BCE34E57E /* libPods-newsapp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 428C2D3AA58CEB10CC447E7A /* libPods-newsapp-tvOSTests.a */; };
+		DCE4A0540F3C420C8600090B /* SFProDisplay-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A96F0CD93C7C45D688A7E66C /* SFProDisplay-HeavyItalic.otf */; };
 		E944A1F079364B43B6F5121C /* SFProDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 273D348A61074FF4B8E7149C /* SFProDisplay-Bold.otf */; };
 		ED572A93669446CFB548D1E0 /* SFProDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E299DFC48474DCBACEE4822 /* SFProDisplay-Black.otf */; };
-		7C839F6C7CA441B7BCB5E45D /* SFProDisplay-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F98741808B6B45D9B5D8F1FB /* SFProDisplay-BlackItalic.otf */; };
-		871823A6EC28464ABEB59CD4 /* SFProDisplay-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8A38D353CA844449AF3D2EC2 /* SFProDisplay-BoldItalic.otf */; };
-		A7EF53855A5646E1A2C11C2E /* SFProDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24FFC1CD9B0940A58B30CFEA /* SFProDisplay-Heavy.otf */; };
-		DCE4A0540F3C420C8600090B /* SFProDisplay-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A96F0CD93C7C45D688A7E66C /* SFProDisplay-HeavyItalic.otf */; };
-		0706F350CA974A01AD9FFB86 /* SFProDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B0FB664188424D865710C4 /* SFProDisplay-Light.otf */; };
-		314C38FEF71844579344B38C /* SFProDisplay-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1037F961359246DDA484D66B /* SFProDisplay-LightItalic.otf */; };
-		8BCE25F7E4064C0994453511 /* SFProDisplay-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A929EC80A0A64B2FAD9887FD /* SFProDisplay-MediumItalic.otf */; };
-		18732FECD1D04462B569D3E0 /* SFProDisplay-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6E966F9927304CB9B0441759 /* SFProDisplay-RegularItalic.otf */; };
-		5BC170C2501B400A973687C8 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41BE8E080BF9426497B070B5 /* SFProDisplay-Semibold.otf */; };
-		88C77581BE8B4C10A3641604 /* SFProDisplay-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1CEB16F041A4C8B8CFAD9C0 /* SFProDisplay-SemiboldItalic.otf */; };
-		3E07899B684640EDA9E9C9F1 /* SFProDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 15EAF3685B1946478B885A37 /* SFProDisplay-Thin.otf */; };
-		5BCD826DB8FF4E039F33C4F9 /* SFProDisplay-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F682B223E0C54EEF83BAF368 /* SFProDisplay-ThinItalic.otf */; };
-		672DEF5226AA4FE89C3DB9EB /* SFProDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 836DC0A754AF442AAD256A74 /* SFProDisplay-Ultralight.otf */; };
-		7E5A10AA5F7F4A0B80A80E6A /* SFProDisplay-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 371E60C3B8F04294ADA7F475 /* SFProDisplay-UltralightItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,9 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* newsappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newsappTests.m; sourceTree = "<group>"; };
 		035C53E1361326CB4BFED4E5 /* libPods-newsapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E299DFC48474DCBACEE4822 /* SFProDisplay-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Black.otf"; path = "../src/assets/fonts/SFProDisplay-Black.otf"; sourceTree = "<group>"; };
 		1017508766F071097D3D4B4C /* Pods-newsapp-newsappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-newsappTests.debug.xcconfig"; path = "Target Support Files/Pods-newsapp-newsappTests/Pods-newsapp-newsappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1037F961359246DDA484D66B /* SFProDisplay-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-LightItalic.otf"; path = "../src/assets/fonts/SFProDisplay-LightItalic.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* newsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = newsapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = newsapp/AppDelegate.m; sourceTree = "<group>"; };
@@ -72,40 +74,38 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = newsapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = newsapp/main.m; sourceTree = "<group>"; };
 		13D0679E878E32192A800955 /* Pods-newsapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp.debug.xcconfig"; path = "Target Support Files/Pods-newsapp/Pods-newsapp.debug.xcconfig"; sourceTree = "<group>"; };
+		15EAF3685B1946478B885A37 /* SFProDisplay-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Thin.otf"; path = "../src/assets/fonts/SFProDisplay-Thin.otf"; sourceTree = "<group>"; };
+		24FFC1CD9B0940A58B30CFEA /* SFProDisplay-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Heavy.otf"; path = "../src/assets/fonts/SFProDisplay-Heavy.otf"; sourceTree = "<group>"; };
 		273D348A61074FF4B8E7149C /* SFProDisplay-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Bold.otf"; path = "../src/assets/fonts/SFProDisplay-Bold.otf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* newsapp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "newsapp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* newsapp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "newsapp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		371E60C3B8F04294ADA7F475 /* SFProDisplay-UltralightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-UltralightItalic.otf"; path = "../src/assets/fonts/SFProDisplay-UltralightItalic.otf"; sourceTree = "<group>"; };
 		40CFD0FECCF89962C6785830 /* Pods-newsapp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-newsapp-tvOS/Pods-newsapp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		41BE8E080BF9426497B070B5 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Semibold.otf"; path = "../src/assets/fonts/SFProDisplay-Semibold.otf"; sourceTree = "<group>"; };
 		428C2D3AA58CEB10CC447E7A /* libPods-newsapp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsapp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50710430684AADA734DC82B9 /* libPods-newsapp-newsappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsapp-newsappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F730B004B841A5ACD6081F /* Pods-newsapp-newsappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-newsappTests.release.xcconfig"; path = "Target Support Files/Pods-newsapp-newsappTests/Pods-newsapp-newsappTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B050D95505E42B8B932167C /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Regular.otf"; path = "../src/assets/fonts/SFProDisplay-Regular.otf"; sourceTree = "<group>"; };
 		6E43A61036FDDEEA4969137B /* Pods-newsapp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-newsapp-tvOS/Pods-newsapp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		6E966F9927304CB9B0441759 /* SFProDisplay-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-RegularItalic.otf"; path = "../src/assets/fonts/SFProDisplay-RegularItalic.otf"; sourceTree = "<group>"; };
 		7C3D9DE18037FBD03EE743FA /* libPods-newsapp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsapp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = newsapp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		836DC0A754AF442AAD256A74 /* SFProDisplay-Ultralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Ultralight.otf"; path = "../src/assets/fonts/SFProDisplay-Ultralight.otf"; sourceTree = "<group>"; };
+		8A38D353CA844449AF3D2EC2 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-BoldItalic.otf"; path = "../src/assets/fonts/SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; };
+		A1CEB16F041A4C8B8CFAD9C0 /* SFProDisplay-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-SemiboldItalic.otf"; path = "../src/assets/fonts/SFProDisplay-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		A929EC80A0A64B2FAD9887FD /* SFProDisplay-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-MediumItalic.otf"; path = "../src/assets/fonts/SFProDisplay-MediumItalic.otf"; sourceTree = "<group>"; };
+		A96F0CD93C7C45D688A7E66C /* SFProDisplay-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-HeavyItalic.otf"; path = "../src/assets/fonts/SFProDisplay-HeavyItalic.otf"; sourceTree = "<group>"; };
 		AB4B7832EE954994922D8436 /* SFProDisplay-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Medium.otf"; path = "../src/assets/fonts/SFProDisplay-Medium.otf"; sourceTree = "<group>"; };
 		BC6D040215096BC768AD7637 /* Pods-newsapp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-newsapp-tvOSTests/Pods-newsapp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D04E4882DEF8CE9E92527337 /* Pods-newsapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp.release.xcconfig"; path = "Target Support Files/Pods-newsapp/Pods-newsapp.release.xcconfig"; sourceTree = "<group>"; };
+		D2B0FB664188424D865710C4 /* SFProDisplay-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Light.otf"; path = "../src/assets/fonts/SFProDisplay-Light.otf"; sourceTree = "<group>"; };
 		DBB069DEE42349F8BF7D9440 /* PlayfairDisplay-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-SemiBold.otf"; path = "../src/assets/fonts/PlayfairDisplay-SemiBold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F4373BA981ED36E42A1E6D71 /* Pods-newsapp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-newsapp-tvOSTests/Pods-newsapp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6463D8C599D484C9E909639 /* PlayfairDisplay-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PlayfairDisplay-SemiBold.otf"; path = "../assets/fonts/PlayfairDisplay-SemiBold.otf"; sourceTree = "<group>"; };
-		0E299DFC48474DCBACEE4822 /* SFProDisplay-Black.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Black.otf"; path = "../src/assets/fonts/SFProDisplay-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F98741808B6B45D9B5D8F1FB /* SFProDisplay-BlackItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-BlackItalic.otf"; path = "../src/assets/fonts/SFProDisplay-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8A38D353CA844449AF3D2EC2 /* SFProDisplay-BoldItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-BoldItalic.otf"; path = "../src/assets/fonts/SFProDisplay-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		24FFC1CD9B0940A58B30CFEA /* SFProDisplay-Heavy.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Heavy.otf"; path = "../src/assets/fonts/SFProDisplay-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A96F0CD93C7C45D688A7E66C /* SFProDisplay-HeavyItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-HeavyItalic.otf"; path = "../src/assets/fonts/SFProDisplay-HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D2B0FB664188424D865710C4 /* SFProDisplay-Light.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Light.otf"; path = "../src/assets/fonts/SFProDisplay-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1037F961359246DDA484D66B /* SFProDisplay-LightItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-LightItalic.otf"; path = "../src/assets/fonts/SFProDisplay-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A929EC80A0A64B2FAD9887FD /* SFProDisplay-MediumItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-MediumItalic.otf"; path = "../src/assets/fonts/SFProDisplay-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6E966F9927304CB9B0441759 /* SFProDisplay-RegularItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-RegularItalic.otf"; path = "../src/assets/fonts/SFProDisplay-RegularItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		41BE8E080BF9426497B070B5 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Semibold.otf"; path = "../src/assets/fonts/SFProDisplay-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A1CEB16F041A4C8B8CFAD9C0 /* SFProDisplay-SemiboldItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-SemiboldItalic.otf"; path = "../src/assets/fonts/SFProDisplay-SemiboldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		15EAF3685B1946478B885A37 /* SFProDisplay-Thin.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Thin.otf"; path = "../src/assets/fonts/SFProDisplay-Thin.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F682B223E0C54EEF83BAF368 /* SFProDisplay-ThinItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-ThinItalic.otf"; path = "../src/assets/fonts/SFProDisplay-ThinItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		836DC0A754AF442AAD256A74 /* SFProDisplay-Ultralight.otf */ = {isa = PBXFileReference; name = "SFProDisplay-Ultralight.otf"; path = "../src/assets/fonts/SFProDisplay-Ultralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		371E60C3B8F04294ADA7F475 /* SFProDisplay-UltralightItalic.otf */ = {isa = PBXFileReference; name = "SFProDisplay-UltralightItalic.otf"; path = "../src/assets/fonts/SFProDisplay-UltralightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F682B223E0C54EEF83BAF368 /* SFProDisplay-ThinItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-ThinItalic.otf"; path = "../src/assets/fonts/SFProDisplay-ThinItalic.otf"; sourceTree = "<group>"; };
+		F98741808B6B45D9B5D8F1FB /* SFProDisplay-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-BlackItalic.otf"; path = "../src/assets/fonts/SFProDisplay-BlackItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,7 +360,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 28S7PL3L35;
+						DevelopmentTeam = 8A35N5ZG2T;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -742,7 +742,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 28S7PL3L35;
+				DEVELOPMENT_TEAM = 8A35N5ZG2T;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -766,7 +766,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 28S7PL3L35;
+				DEVELOPMENT_TEAM = 8A35N5ZG2T;
 				INFOPLIST_FILE = newsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
