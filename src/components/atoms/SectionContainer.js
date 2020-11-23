@@ -1,31 +1,26 @@
 import React from 'react';
-import {View, Text, StatusBar, ScrollView, StyleSheet} from 'react-native';
-import {mockdata} from "../../data/mockdata";
-import SectionContainer from "../../components/atoms/SectionContainer";
+import {Image, StyleSheet, Text, View} from "react-native";
 import {Colors, Typography} from "../../styles";
 
-const HomeScreen = () => {
+function SectionContainer ({title, description, image, date, author}){
+
   return (
-    <View style={styles.root}>
-      <StatusBar barStyle="light-content" />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={styles.scrollView}>
-        <View style={styles.headerContainer}>
-          <Text style={styles.sectionTitle}>{"Today's Read"}</Text>
-        </View>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
-        <View style={styles.headerContainer}>
-          <Text style={styles.sectionTitle}>{"Previous Reads"}</Text>
-        </View>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
-      </ScrollView>
+    <View style={styles.sectionContainer}>
+      <Text style={styles.articleTitle}>{title}</Text>
+      <Text style={styles.authorDateStyle}>Author: {author}</Text>
+      <Text style={styles.authorDateStyle}>Released: {date}</Text>
+      <Image
+        style={styles.replacerBox}
+        source={{
+          uri: image,
+        }}
+      />
+      <Text style={styles.sectionDescription}>{description}</Text>
     </View>
   )
 }
 
-export default HomeScreen
+export default SectionContainer
 
 const styles = StyleSheet.create({
   root: {
