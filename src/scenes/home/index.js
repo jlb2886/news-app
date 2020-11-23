@@ -4,7 +4,7 @@ import {mockdata} from "../../data/mockdata";
 import SectionContainer from "../../components/atoms/SectionContainer";
 import {Colors, Typography} from "../../styles";
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content" />
@@ -18,8 +18,8 @@ const HomeScreen = () => {
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Previous Reads"}</Text>
         </View>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
+        <SectionContainer title={mockdata[1].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
+        <SectionContainer title={mockdata[2].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image}/>
       </ScrollView>
     </View>
   )

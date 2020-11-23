@@ -1,9 +1,16 @@
 import React from 'react';
 import {View, Text, StatusBar, ScrollView, StyleSheet} from 'react-native';
+import {SafeAreaView} from "react-native-safe-area-context";
 
-const ArticleScreen = () => {
+const ArticleScreen = ({route}) => {
+
+  const {title, description} = route.params
+
   return (
-    <Text>Hello World</Text>
+    <SafeAreaView>
+      <Text>{title}</Text>
+      <Text>{description}</Text>
+    </SafeAreaView>
   )
 }
 

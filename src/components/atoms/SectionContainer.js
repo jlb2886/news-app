@@ -1,11 +1,18 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from "react-native";
+import {Image, Pressable, StyleSheet, Text, View} from "react-native";
 import {Colors, Typography} from "../../styles";
+import {useNavigation} from "@react-navigation/native";
 
 function SectionContainer ({title, description, image, date, author}){
+  const navigation = useNavigation()
+
+  const handlePress = () => {
+    console.log('SOMEONE TOUCHED ME :O')
+    navigation.navigate('Article', {title, description})
+  }
 
   return (
-    <View style={styles.sectionContainer}>
+    <Pressable style={styles.sectionContainer} onPress={handlePress}>
       <Text style={styles.articleTitle}>{title}</Text>
       <Text style={styles.authorDateStyle}>Author: {author}</Text>
       <Text style={styles.authorDateStyle}>Released: {date}</Text>
@@ -16,7 +23,7 @@ function SectionContainer ({title, description, image, date, author}){
         }}
       />
       <Text style={styles.sectionDescription}>{description}</Text>
-    </View>
+    </Pressable>
   )
 }
 
