@@ -5,20 +5,23 @@ import {Colors, Typography} from "../../styles";
 
 const ArticleScreen = ({route, navigation}) => {
 console.log(route.params)
-  const {title, body, image} = route.params
+  const {title, body, image, author, date} = route.params
 
   return (
     <SafeAreaView style={styles.root}>
       <ScrollView>
-      <Pressable onPress={() => navigation.goBack()}><Text style={styles.back}>Back</Text></Pressable>
-      <Text style={styles.articleTitle}>{title}</Text>
-      <Image
-        style={styles.replacerBox}
-        source={{
-          uri: image,
-        }}
-      />
-      <Text style={styles.articleBody}>{body}</Text>
+        <Pressable onPress={() => navigation.goBack()}><Text style={styles.back}>Back</Text></Pressable>
+        <Text style={styles.articleTitle}>{title}</Text>
+        <Image
+          style={styles.replacerBox}
+          source={{
+            uri: image,
+          }}
+        />
+        <Text style={styles.articleBody}>{body}</Text>
+        <Text style={styles.articleFooter}>Article Author: {author} </Text>
+        <Text style={styles.articleFooter}>Released: {date}</Text>
+        <Text style={styles.share}>Share</Text>
       </ScrollView>
     </SafeAreaView>
   )
@@ -57,5 +60,24 @@ const styles = StyleSheet.create({
     lineHeight: 30,
     color: Colors.GRAY_LIGHT,
     marginHorizontal: 20,
-  }
+  },
+  articleFooter: {
+    ...Typography.FONT_REGULAR,
+    fontSize: Typography.FONT_SIZE_16,
+    color: Colors.WHITE,
+    marginHorizontal: 20,
+    marginTop: 20,
+  },
+  share: {
+    ...Typography.FONT_BOLD,
+    fontSize: Typography.FONT_SIZE_16,
+    color: Colors.WHITE,
+    marginHorizontal: 20,
+    marginTop: 40,
+    textAlign: 'center',
+    borderWidth: 2,
+    borderColor: Colors.WHITE,
+    borderRadius: 10,
+    paddingVertical: 10,
+  },
 })

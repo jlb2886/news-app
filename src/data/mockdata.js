@@ -23,7 +23,6 @@ export const mockdata = [
       "\n" +
       "More than 90 optics, photonics, and imaging companies are located within a 30 mile radius of Syracuse, and local institutions such as the State University of Syracuse’s Institute of Optics and Lasers to provide research and job training programs. This has offered 12.5% employment opportunities in the field of academia and technological innovation, which has increased the average employment by 2.9%.\n" +
       "\n" +
-      "\n" +
       "A panel discussion on the importance of Syracuse's involvement in the newly-launched National Photonics and Fiber Optics Initiative (NPFOI) followed Jessica’s remarks. The panelists were: Steve Heffner, industry and market strategist for SEIP; Tom Abraham, senior advisor for the ASO; Jennifer Walter, director of the Center for Urban Innovation in the Robert Allen College at the Syracuse Institute of Technology; Steve Xavier, founder and CEO of Optophonics Corporation; and Duncan Kroger vice provost for entrepreneurship and professor of optics at the State University of Syracuse co-hosted an event at the Syracuse Museum & Science Center focusing on the economic importance of optics and photonics to Syracuse and the state of New York. This continuing research in the field of photonics could bode well for Syracuse's economy even in the future because it has proved its potential by contributing enormously to the economic growth of the region.\n",
     sources: "BrickWallCyber.com",
   },
