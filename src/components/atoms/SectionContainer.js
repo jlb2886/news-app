@@ -7,7 +7,7 @@ function SectionContainer ({title, description, image, date, author, body}){
   const navigation = useNavigation()
 
   const handlePress = () => {
-    console.log('SOMEONE TOUCHED ME :O')
+    console.log('handlePress was triggered')
     navigation.navigate('Article', {title, description, image, body, date, author})
   }
 
