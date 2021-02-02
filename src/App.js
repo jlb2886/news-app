@@ -20,7 +20,7 @@ const App: () => React$Node = () => {
     <NavigationContainer>
       <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name={"Home"} component={HomeScreen}/>
-        {/*<Stack.Screen name={"Article"} component={ArticleScreen}/>*/}
+        <Stack.Screen name={"Article"} component={ArticleScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   )

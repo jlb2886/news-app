@@ -8,7 +8,7 @@ const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content" />
-      <ScrollView>
+      <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
         <View style={styles.headerContainer}>
