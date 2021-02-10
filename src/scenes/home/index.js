@@ -1,42 +1,107 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {View, Text, StatusBar, ScrollView, StyleSheet} from 'react-native';
 import {mockdata} from "../../data/mockdata";
 import SectionContainer from "../../components/atoms/SectionContainer";
 import {Colors, Typography} from "../../styles";
+import firestore from '@react-native-firebase/firestore';
+import moment from "moment";
+
+// const cohortStartDate = "March 1st 2021, 12:00 am"
+// For testing purposes:
+const cohortStartDate = "February 10th 2021, 12:19:00 am"
+
+const getDayID = () => {
+
+  console.log("moment information:")
+  console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
+
+  // Get the amount of days in between the start date and the current date
+  // console.log("number of days between: " + moment("2021-01-05").fromNow())
+  //
+  // var dateofvisit = moment('{visit}', 'DD-MM-YYYY');
+  // var today = moment();
+  // today.diff(dateofvisit, 'days');
+
+  return 5
+}
 
 const HomeScreen = ({navigation}) => {
+  const [articles, setArticles] = useState([])
+  const [featuredArticle, setFeaturedArticle] = useState({})
+
+  function getArticles() {
+      const subscriber = firestore()
+        .collection("articles")
+        .where("dayID", "<", getDayID())
+        .orderBy("dayID", "asc")
+        .get()
+        .then(querySnapshot => {
+          console.log('Total articles: ', querySnapshot.size);
+
+          let articleTemp = []
+
+          querySnapshot.forEach(documentSnapshot => {
+            // console.log('Article ID: ', documentSnapshot.id, documentSnapshot.data());
+            articleTemp.push({
+              ...documentSnapshot.data(),
+              id: documentSnapshot.id,
+            })
+          });
+
+          setArticles(articleTemp)
+          console.log(articleTemp)
+
+        });
+
+      // Stop listening for updates when no longer required
+      return () => subscriber();
+  }
+
+  useEffect(getArticles, [])
+
+  console.log('Yeetttttt')
+
+  if (moment().format('MMMM Do YYYY, h:mm:ss a') < cohortStartDate)
+    return (
+      <View style={styles.root}>
+        <StatusBar barStyle="light-content"/>
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          style={styles.scrollView}>
+          <View style={styles.headerContainer}>
+            <Text style={styles.sectionTitle}>{"No Reads yet"}</Text>
+          </View>
+        </ScrollView>
+      </View>
+    )
+
   return (
     <View style={styles.root}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content"/>
+
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Today's Read"}</Text>
         </View>
-        <SectionContainer title={mockdata[0].title} description={mockdata[0].description} date={mockdata[0].date} author={mockdata[0].author} image={mockdata[0].image} body={mockdata[0].body}/>
+        <SectionContainer title={featuredArticle.title} description={featuredArticle.description}
+                          date={featuredArticle.date} author={featuredArticle.author} image={featuredArticle.image}
+                          body={featuredArticle.body}/>
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Previous Reads"}</Text>
         </View>
-        <SectionContainer title={mockdata[1].title} description={mockdata[1].description} date={mockdata[1].date} author={mockdata[1].author} image={mockdata[1].image} body={mockdata[1].body}/>
-        <SectionContainer title={mockdata[2].title} description={mockdata[2].description} date={mockdata[2].date} author={mockdata[2].author} image={mockdata[2].image} body={mockdata[2].body}/>
+        {articles && articles.map(article => {
+          return <SectionContainer key={article.id} title={article.dayID + " | " + article.title}
+                                   description={article.description} date={article.date} author={article.author}
+                                   image={article.image} body={article.body}/>
+        })}
       </ScrollView>
     </View>
   )
 
 }
 export default HomeScreen
-
-// function setDates({mockdata}){
-//   let todaysArticleIndex = () => {
-//     return mockdata.map(dates => {
-//       return(
-//         console.log(dates.date)
-//       )
-//     })
-//   }
-//   return (todaysArticleIndex())
-// }
 
 const styles = StyleSheet.create({
   root: {
