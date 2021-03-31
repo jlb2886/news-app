@@ -1,16 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import {View, Text, StatusBar, ScrollView, StyleSheet} from 'react-native';
+import {Button, View, Text, StatusBar, ScrollView, StyleSheet} from 'react-native';
 import {mockdata} from "../../data/mockdata";
 import SectionContainer from "../../components/atoms/SectionContainer";
 import {Colors, Typography} from "../../styles";
 import firestore from '@react-native-firebase/firestore';
 import moment from "moment";
+import { InAppBrowser } from 'react-native-inappbrowser-reborn'
+
 
 // const cohortStartDate = "March 1st 2021, 12:00 am"
 // For testing purposes:
 const cohortStartDate = "February 10th 2021, 12:19:00 am"
 
 const getDayID = () => {
+
+  // What I want to do
+  // If - the Cohort Start Date = Today's Date or After the Cohort Start Date
+  // Then - I want to subtract (Today's Date - Cohort Start Date) =
+  // Some Variable which should equal the Day ID Matching the Correct Article to Display
+  // Display the correct article for that day under "Today's Read"
+  // Display past articles, so articles up to the day id to have under "Previous Reads"
 
   console.log("moment information:")
   console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
@@ -61,7 +70,7 @@ const HomeScreen = ({navigation}) => {
 
   console.log('Yeetttttt')
 
-  if (moment().format('MMMM Do YYYY, h:mm:ss a') < cohortStartDate)
+  if (moment().format('MMMM Do YYYY, h:mm:ss a') < cohortStartDate) //If Cohort start date is
     return (
       <View style={styles.root}>
         <StatusBar barStyle="light-content"/>
@@ -75,6 +84,25 @@ const HomeScreen = ({navigation}) => {
       </View>
     )
 
+  function onPressOpenLink() {
+    InAppBrowser.isAvailable()
+      .then(r => {
+        const url = 'https://www.google.com'
+        const options = {
+          forceCloseOnRedirection: true,
+        }
+
+        InAppBrowser.open(url, options)
+          .then(r => {
+            console.log("OnPressOpenLink Result(r): ", r)
+          })
+          .catch(error => {
+            console.log(error.message)
+          })
+
+      })
+  }
+
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content"/>
@@ -82,19 +110,33 @@ const HomeScreen = ({navigation}) => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
+
+        <Button
+          onPress={onPressOpenLink}
+          title="Open Link"
+          style={{
+            color: "#841584",
+            backgroundColor: '#ac91ac',
+            height: 24,
+            width: 142,
+          }}
+
+          accessibilityLabel="Learn more about this purple button"
+        />
+
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Today's Read"}</Text>
         </View>
-        <SectionContainer title={featuredArticle.title} description={featuredArticle.description}
-                          date={featuredArticle.date} author={featuredArticle.author} image={featuredArticle.image}
-                          body={featuredArticle.body}/>
+        <SectionContainer title={featuredArticle.title}
+                          date={featuredArticle.date} imageURL={featuredArticle.imageURL}
+                          articleBody={featuredArticle.articleBody}/>
         <View style={styles.headerContainer}>
           <Text style={styles.sectionTitle}>{"Previous Reads"}</Text>
         </View>
         {articles && articles.map(article => {
-          return <SectionContainer key={article.id} title={article.dayID + " | " + article.title}
-                                   description={article.description} date={article.date} author={article.author}
-                                   image={article.image} body={article.body}/>
+          return <SectionContainer key={article.id} title={article.title} //For testing: (article.dayID + " | " + ) in front of article.title
+                                   date={article.date}
+                                   imageURL={article.imageURL} articleBody={article.articleBody}/>
         })}
       </ScrollView>
     </View>

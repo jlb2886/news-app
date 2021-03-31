@@ -3,26 +3,24 @@ import {Image, Pressable, StyleSheet, Text, View} from "react-native";
 import {Colors, Typography} from "../../styles";
 import {useNavigation} from "@react-navigation/native";
 
-function SectionContainer ({title, description, image, date, author, body}){
+function SectionContainer ({title, imageURL, date, articleBody}){
   const navigation = useNavigation()
 
   const handlePress = () => {
     console.log('handlePress was triggered')
-    navigation.navigate('Article', {title, description, image, body, date, author})
+    navigation.navigate('Article', {title, imageURL, date, articleBody})
   }
 
   return (
     <Pressable style={styles.sectionContainer} onPress={handlePress}>
       <Text style={styles.articleTitle}>{title}</Text>
-      <Text style={styles.authorDateStyle}>Author: {author}</Text>
       <Text style={styles.authorDateStyle}>Released: {date}</Text>
       <Image
         style={styles.replacerBox}
         source={{
-          uri: image,
+          uri: imageURL,
         }}
       />
-      <Text style={styles.sectionDescription}>{description}</Text>
       <Text style={styles.readMore}>Read More</Text>
     </Pressable>
   )
