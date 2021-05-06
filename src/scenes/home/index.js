@@ -8,7 +8,7 @@ const HomeScreen = ({navigation}) => {
   function onPressOpenLink() {
     InAppBrowser.isAvailable()
       .then(r => {
-        const url = 'https://intranet.brickwallcyber.com/login/'
+        const url = 'http://news.brickwallcyber.com/'
         const options = {
           forceCloseOnRedirection: true,
         }
@@ -23,12 +23,6 @@ const HomeScreen = ({navigation}) => {
 
       })
   }
-
-  const AppButton = ({ onPressLink, title }) => (
-    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
-      <Text style={styles.appButtonText}>{title}</Text>
-    </TouchableOpacity>
-  );
 
   return (
     <View style={styles.root}>
@@ -51,14 +45,14 @@ const HomeScreen = ({navigation}) => {
         </View>
 
         <View style={styles.sectionContainer}>
-          <Text style={styles.sectionDescription}>{"Login to Brick Wall Cyber to acess your account and information for your cohort."}</Text>
+          <Text style={styles.sectionDescription}>{"Login to Brick Wall Cyber to access your account and information for your cohort."}</Text>
         </View>
 
         <View style={styles.button}>
           <Button
             // style={styles.sectionTitle}
             onPress={onPressOpenLink}
-            title="Open Link"
+            title="Brick Wall Cyber Login"
             color= "#DFE0F1"
           />
         </View>
