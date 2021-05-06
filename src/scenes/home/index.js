@@ -1,93 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import {Button, View, Text, StatusBar, ScrollView, StyleSheet} from 'react-native';
-import {mockdata} from "../../data/mockdata";
-import SectionContainer from "../../components/atoms/SectionContainer";
 import {Colors, Typography} from "../../styles";
-import firestore from '@react-native-firebase/firestore';
-import moment from "moment";
 import { InAppBrowser } from 'react-native-inappbrowser-reborn'
 
-
-// const cohortStartDate = "March 1st 2021, 12:00 am"
-// For testing purposes:
-const cohortStartDate = "February 10th 2021, 12:19:00 am"
-
-const getDayID = () => {
-
-  // What I want to do
-  // If - the Cohort Start Date = Today's Date or After the Cohort Start Date
-  // Then - I want to subtract (Today's Date - Cohort Start Date) =
-  // Some Variable which should equal the Day ID Matching the Correct Article to Display
-  // Display the correct article for that day under "Today's Read"
-  // Display past articles, so articles up to the day id to have under "Previous Reads"
-
-  console.log("moment information:")
-  console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
-
-  // Get the amount of days in between the start date and the current date
-  // console.log("number of days between: " + moment("2021-01-05").fromNow())
-  //
-  // var dateofvisit = moment('{visit}', 'DD-MM-YYYY');
-  // var today = moment();
-  // today.diff(dateofvisit, 'days');
-
-  return 5
-}
-
 const HomeScreen = ({navigation}) => {
-  const [articles, setArticles] = useState([])
-  const [featuredArticle, setFeaturedArticle] = useState({})
-
-  function getArticles() {
-      const subscriber = firestore()
-        .collection("articles")
-        .where("dayID", "<", getDayID())
-        .orderBy("dayID", "asc")
-        .get()
-        .then(querySnapshot => {
-          console.log('Total articles: ', querySnapshot.size);
-
-          let articleTemp = []
-
-          querySnapshot.forEach(documentSnapshot => {
-            // console.log('Article ID: ', documentSnapshot.id, documentSnapshot.data());
-            articleTemp.push({
-              ...documentSnapshot.data(),
-              id: documentSnapshot.id,
-            })
-          });
-
-          setArticles(articleTemp)
-          console.log(articleTemp)
-
-        });
-
-      // Stop listening for updates when no longer required
-      return () => subscriber();
-  }
-
-  useEffect(getArticles, [])
-
-  console.log('Yeetttttt')
-
-  if (moment().format('MMMM Do YYYY, h:mm:ss a') < cohortStartDate) //If Cohort start date is
-    return (
-      <View style={styles.root}>
-        <StatusBar barStyle="light-content"/>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <View style={styles.headerContainer}>
-            <Text style={styles.sectionTitle}>{"No Reads yet"}</Text>
-          </View>
-        </ScrollView>
-      </View>
-    )
 
   function onPressOpenLink() {
     InAppBrowser.isAvailable()
       .then(r => {
-        const url = 'https://www.google.com'
+        const url = 'https://intranet.brickwallcyber.com/login/'
         const options = {
           forceCloseOnRedirection: true,
         }
@@ -103,6 +24,12 @@ const HomeScreen = ({navigation}) => {
       })
   }
 
+  const AppButton = ({ onPressLink, title }) => (
+    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
+      <Text style={styles.appButtonText}>{title}</Text>
+    </TouchableOpacity>
+  );
+
   return (
     <View style={styles.root}>
       <StatusBar barStyle="light-content"/>
@@ -111,33 +38,33 @@ const HomeScreen = ({navigation}) => {
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
 
-        <Button
-          onPress={onPressOpenLink}
-          title="Open Link"
-          style={{
-            color: "#841584",
-            backgroundColor: '#ac91ac',
-            height: 24,
-            width: 142,
-          }}
-
-          accessibilityLabel="Learn more about this purple button"
-        />
+        {/*Screen Top*/}
 
         <View style={styles.headerContainer}>
-          <Text style={styles.sectionTitle}>{"Today's Read"}</Text>
+          <Text style={styles.sectionTitle}>{"News"}</Text>
         </View>
-        <SectionContainer title={featuredArticle.title}
-                          date={featuredArticle.date} imageURL={featuredArticle.imageURL}
-                          articleBody={featuredArticle.articleBody}/>
+
         <View style={styles.headerContainer}>
-          <Text style={styles.sectionTitle}>{"Previous Reads"}</Text>
+          <View style={styles.styleLines}/>
+          <Text style={styles.articleTitle}>{"Login"}</Text>
+          <View style={styles.styleLines}/>
         </View>
-        {articles && articles.map(article => {
-          return <SectionContainer key={article.id} title={article.title} //For testing: (article.dayID + " | " + ) in front of article.title
-                                   date={article.date}
-                                   imageURL={article.imageURL} articleBody={article.articleBody}/>
-        })}
+
+        <View style={styles.sectionContainer}>
+          <Text style={styles.sectionDescription}>{"Login to Brick Wall Cyber to acess your account and information for your cohort."}</Text>
+        </View>
+
+        <View style={styles.button}>
+          <Button
+            // style={styles.sectionTitle}
+            onPress={onPressOpenLink}
+            title="Open Link"
+            color= "#DFE0F1"
+          />
+        </View>
+
+        {/*Bottom of Screen*/}
+
       </ScrollView>
     </View>
   )
@@ -156,19 +83,38 @@ const styles = StyleSheet.create({
     position: 'absolute',
     right: 0,
   },
+  button: {
+    backgroundColor: Colors.PRIMARY,
+    marginTop: 70,
+    borderRadius: 50,
+    marginHorizontal: 60,
+    marginVertical: 20,
+    paddingHorizontal: 24,
+    paddingVertical: 10,
+  },
+  styleLines: {
+    borderBottomWidth: 2,
+    borderBottomColor: Colors.PRIMARY,
+    marginTop: 20,
+    marginHorizontal: 5,
+    height: 2,
+    width: '50%',
+    display: 'flex',
+    flexDirection: 'row',
+  },
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
     paddingVertical: 20,
-    backgroundColor: Colors.SECONDARY,
     borderRadius: 10,
     marginHorizontal: 20,
     marginVertical: 10,
   },
   sectionTitle: {
     ...Typography.FONT_SEMI_BOLD,
-    fontSize: Typography.FONT_SIZE_32,
+    fontSize: Typography.FONT_SIZE_64,
     color: Colors.WHITE,
+    textAlign: 'center',
   },
   headerContainer: {
     ...Typography.FONT_SEMI_BOLD,
@@ -177,15 +123,22 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     color: Colors.WHITE,
     marginBottom: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.WHITE,
     marginHorizontal: 20,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
   articleTitle: {
     ...Typography.FONT_SEMI_BOLD,
     fontSize: Typography.FONT_SIZE_32,
     color: Colors.WHITE,
     marginBottom: 15,
+    textAlign: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.WHITE,
+    display: 'flex',
+    flexDirection: 'row',
+    marginHorizontal: 20,
   },
   authorDateStyle: {
     marginTop: 8,
@@ -204,8 +157,11 @@ const styles = StyleSheet.create({
   sectionDescription: {
     marginTop: 8,
     ...Typography.FONT_REGULAR,
-    fontSize: Typography.FONT_SIZE_16,
-    color: Colors.GRAY_LIGHT,
+    fontSize: Typography.FONT_SIZE_24,
+    color: Colors.GRAY_DARK,
+    marginBottom: 15,
+    marginHorizontal: 20,
+    textAlign: 'center',
   },
   highlight: {
     fontWeight: '700',
