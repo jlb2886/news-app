@@ -38,3 +38,50 @@ react-native run-ios
 ```
 react-native run-android
 ```
+## Changes To BWC News Link
+
+### 1. Open Project In IDE
+### 2. Navigate To The Index File
+```
+news-app/src/scenes/home/index.js
+```
+>Navigate to this file in your IDE to make edits
+### 3. Making Changes
+#### Find this code: 
+
+```
+const url = 'http://news.brickwallcyber.com/'
+```
+> Edit the link to change where the user will be redirected.
+
+```
+<Text style={styles.sectionTitle}>{"News"}</Text>
+```
+> Edit the text "News" to be what you want your title to say
+
+#### Making Style Changes (Optional):
+
+```
+<Button
+    onPress={onPressOpenLink}
+    title="Brick Wall Cyber Login"
+    // ***Change this color to suit your color pallet***
+    color= "#DFE0F1"
+    // ***
+/>
+```
+>Change ```color = "#DFE0F1"``` to be a color than suits your color pallet
+
+```
+const styles = StyleSheet.create({
+```
+>Change the styles, located at the end of the file to suit your personal preferences
+
+### 3. Changing The Color scheme
+
+#### Navigate to this file:
+
+```
+news-app/src/styles/colors
+```
+>Change the colors here for your primary and secondary colors plus others if need be.

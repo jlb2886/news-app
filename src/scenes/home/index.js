@@ -8,7 +8,9 @@ const HomeScreen = ({navigation}) => {
   function onPressOpenLink() {
     InAppBrowser.isAvailable()
       .then(r => {
+        // *** Link To Be Changed ***
         const url = 'http://news.brickwallcyber.com/'
+        // ***
         const options = {
           forceCloseOnRedirection: true,
         }
@@ -32,10 +34,10 @@ const HomeScreen = ({navigation}) => {
         contentInsetAdjustmentBehavior="automatic"
         style={styles.scrollView}>
 
-        {/*Screen Top*/}
-
         <View style={styles.headerContainer}>
+          {/***Change the "News" to anything (What you want your title to be)***/}
           <Text style={styles.sectionTitle}>{"News"}</Text>
+          {/*****/}
         </View>
 
         <View style={styles.headerContainer}>
@@ -50,14 +52,13 @@ const HomeScreen = ({navigation}) => {
 
         <View style={styles.button}>
           <Button
-            // style={styles.sectionTitle}
             onPress={onPressOpenLink}
             title="Brick Wall Cyber Login"
+            // ***Change this color to suit your color pallet***
             color= "#DFE0F1"
+            // ***
           />
         </View>
-
-        {/*Bottom of Screen*/}
 
       </ScrollView>
     </View>
@@ -66,6 +67,7 @@ const HomeScreen = ({navigation}) => {
 }
 export default HomeScreen
 
+// *** Edit the styles here ***
 const styles = StyleSheet.create({
   root: {
     backgroundColor: Colors.BLACK,
